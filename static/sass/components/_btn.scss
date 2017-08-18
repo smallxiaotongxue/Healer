@@ -1,0 +1,12 @@
+
+.btn-primary{
+    display: block;
+    height: .9rem;
+    line-height: .9rem;
+    border-radius: .9rem;
+    text-align: center;
+    font-size: .3rem;
+    margin: .5rem;
+    color: #fff;
+    background: linear-gradient(to right,$theme-color-dark,$theme-color-light);
+}

@@ -1,0 +1,46 @@
+.nav-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    background: linear-gradient(to right,#4C67EA,#819FF5);
+    box-shadow: 0 0 30px #000;
+
+    &:after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .nav-header-title{
+        display: inline-block;
+        font-size: .32rem;
+        color: #fff;
+    }
+    .nav-header-left {
+        float: left;
+        padding-left: .3rem;
+        color: #fff;
+    }
+    .nav-header-right {
+        float: right;
+        padding-right: .3rem;
+        color: #fff;
+        position: relative;
+        
+        .msg-point{
+            display: block;
+            position: absolute;
+            bottom: .2rem;
+            right: .3rem;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #ff4646;
+            color: #ffffff;
+        }
+    }
+    
+}

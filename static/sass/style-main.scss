@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+@import "base/reset";
+@import "base/common";
+@import "base/icon";
+
+@import "ext/mixin";
+
+@import "components/header";
+@import "components/footer";
+@import "components/btn";
+@import "components/form-list";
+
+header + .wrapper {
+    padding-top: .8rem;
+}
+
+.wrapper{
+    margin: 0 .3rem;
+}
+.title-gray {
+    color: #969696;
+    word-spacing: .2rem;
+}
+
+//index主页样式
+.customer-name{
+    margin-top: .8rem;
+}
+.fun-list{
+    margin-top: 1rem;
+
+    .fun-list-item{
+        margin-bottom: .6rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+
+        a{
+            width: 3.3rem;
+            height: 2.7rem;
+            background: linear-gradient(to top,$gray-dark,$gray-light);
+            border-radius: .2rem;
+            box-shadow: 0px 3px 10px rgba(0,0,0,.4);
+            
+            &.active{
+                background: linear-gradient(to top,$theme-color-dark,$theme-color-light);
+            }
+
+            .iconfont{
+                display: block;
+                margin: .4rem .3rem;
+                color: #ffffff;
+            }
+            p{
+                color: #ffffff;
+                margin: .25rem .3rem;
+               
+                &:nth-of-type(1){
+                    font-size: .36rem;
+                    font-weight:700;
+                }
+                &:nth-of-type(2){
+                    font-size: .26rem;
+                }
+            }
+
+        }
+    }
+}
+
+//signin页样式
+.signin-wrapper{
+    width: 100%;
+    text-align: center;
+    .main-title{
+        font-size: .65rem;
+        margin: 2rem 0 1.5rem;
+    }
+}

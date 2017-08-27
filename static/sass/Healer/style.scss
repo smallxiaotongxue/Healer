@@ -13,12 +13,13 @@
 @import "../components/btn";
 @import "../components/form-list";
 
-header + .wrapper {
+header + section {
     padding-top: .8rem;
 }
 
 .wrapper{
     margin: 0 .3rem;
+    position: relative;
 }
 .title-gray {
     color: #969696;
@@ -76,8 +77,26 @@ header + .wrapper {
 .signin-wrapper{
     width: 100%;
     text-align: center;
+    position: relative;
     .main-title{
         font-size: .65rem;
         margin: 2rem 0 1.5rem;
+    }
+}
+.sign-text-bottom{
+    position: fixed;
+    width: 100%;
+    padding: .3rem;
+    left: 0;
+    bottom: 0;
+    font-size: .3rem;
+    text-align: center;
+
+    p{
+        color: $hint-font-color;
+    }
+    a{
+        color: $theme-font-color;
+        margin-left: .2rem;
     }
 }

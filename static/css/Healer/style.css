@@ -385,7 +385,8 @@ textarea {
   font-size: .3rem;
   margin: .5rem;
   color: #fff;
-  background: linear-gradient(to right, #4C67EA, #819FF5); }
+  background: linear-gradient(to right, #4C67EA, #819FF5);
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3); }
 
 .form-list {
   margin: 0 .3rem; }
@@ -470,11 +471,12 @@ textarea {
     .form-list .list-item-radio .item-body {
       color: #b2b2b2; }
 
-header + .wrapper {
+header + section {
   padding-top: .8rem; }
 
 .wrapper {
-  margin: 0 .3rem; }
+  margin: 0 .3rem;
+  position: relative; }
 
 .title-gray {
   color: #969696;
@@ -513,7 +515,22 @@ header + .wrapper {
 
 .signin-wrapper {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .signin-wrapper .main-title {
     font-size: .65rem;
     margin: 2rem 0 1.5rem; }
+
+.sign-text-bottom {
+  position: fixed;
+  width: 100%;
+  padding: .3rem;
+  left: 0;
+  bottom: 0;
+  font-size: .3rem;
+  text-align: center; }
+  .sign-text-bottom p {
+    color: #666; }
+  .sign-text-bottom a {
+    color: #4f69eb;
+    margin-left: .2rem; }

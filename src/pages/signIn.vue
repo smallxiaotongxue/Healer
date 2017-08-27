@@ -1,6 +1,6 @@
 <template>
 
-	<div class="signin-wrapper">
+	<section class="signin-wrapper">
 
 		<h1 class="main-title">SIGN IN</h1>
 		<ul class="form-list">
@@ -40,8 +40,10 @@
 			<a class="btn-primary">使用 QQ账号 登录</a>
 		</div>
 
+        <div class="sign-text-bottom">
+            <p>没有账号 ?<a>注册</a></p>
+        </div>
 
-	</div>
-
+	</section>
 
 </template>

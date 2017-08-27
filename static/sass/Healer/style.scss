@@ -1,15 +1,17 @@
 @charset "utf-8";
 
-@import "base/reset";
-@import "base/common";
-@import "base/icon";
+@import "../base/theme-default";
 
-@import "ext/mixin";
+@import "../base/reset";
+@import "../base/common";
+@import "../base/icon";
 
-@import "components/header";
-@import "components/footer";
-@import "components/btn";
-@import "components/form-list";
+@import "../ext/mixin";
+
+@import "../components/header";
+@import "../components/footer";
+@import "../components/btn";
+@import "../components/form-list";
 
 header + .wrapper {
     padding-top: .8rem;

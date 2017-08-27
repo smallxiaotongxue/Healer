@@ -2,6 +2,7 @@
 /* 重置页面样式 */
 * {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
@@ -105,8 +106,7 @@ figure {
   margin: 1em 40px; }
 
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible; }
 
@@ -157,8 +157,7 @@ fieldset {
   padding: 0.35em 0.625em 0.75em; }
 
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -169,8 +168,7 @@ textarea {
   overflow: auto; }
 
 [type="checkbox"], [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0; }
 
 [type="number"]::-webkit-inner-spin-button,
@@ -292,10 +290,8 @@ textarea {
   height: .8rem;
   line-height: .8rem;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(#4C67EA), to(#819FF5));
   background: linear-gradient(to right, #4C67EA, #819FF5);
-  -webkit-box-shadow: 0 0 30px #000;
-          box-shadow: 0 0 30px #000; }
+  box-shadow: 0 0 30px #000; }
   .nav-header:after {
     content: '';
     display: table;
@@ -327,6 +323,7 @@ textarea {
 .nav-footer {
   display: flex;
   display: -webkit-box;
+  display: -moz-box;
   display: -ms-flexbox;
   position: fixed;
   bottom: 0;
@@ -336,15 +333,19 @@ textarea {
   .nav-footer .nav-footer-item {
     display: box;
     display: -webkit-box;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+    -moz-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-flex: 1;
+    -moz-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     color: #696969; }
@@ -356,19 +357,20 @@ textarea {
     height: 1.5rem;
     position: relative;
     top: -.4rem;
-    background: -webkit-gradient(linear, left top, right top, from(#4C67EA), to(#819FF5));
     background: linear-gradient(to right, #4C67EA, #819FF5);
     border-radius: 50%;
-    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
-            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
     display: box;
     display: -webkit-box;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+    -moz-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
     .nav-footer .auscultation i {
@@ -383,7 +385,6 @@ textarea {
   font-size: .3rem;
   margin: .5rem;
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(#4C67EA), to(#819FF5));
   background: linear-gradient(to right, #4C67EA, #819FF5); }
 
 .form-list {
@@ -391,9 +392,11 @@ textarea {
   .form-list .list-item {
     display: box;
     display: -webkit-box;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
+    -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     height: .9rem;
@@ -405,12 +408,15 @@ textarea {
   .form-list .item-icon {
     display: box;
     display: -webkit-box;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+    -moz-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     width: 1rem;
@@ -419,6 +425,7 @@ textarea {
     color: #969696; }
   .form-list .item-body {
     -webkit-box-flex: 1;
+    -moz-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     text-align: left;
@@ -427,12 +434,15 @@ textarea {
   .form-list .item-foot {
     display: box;
     display: -webkit-box;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+    -moz-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     width: 1rem;
@@ -441,9 +451,11 @@ textarea {
   .form-list .list-item-radio {
     display: box;
     display: -webkit-box;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
+    -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     height: .9rem;
@@ -475,24 +487,16 @@ header + .wrapper {
   margin-top: 1rem; }
   .fun-list .fun-list-item {
     margin-bottom: .6rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-line-pack: center;
-        align-content: center; }
+    justify-content: space-between;
+    align-content: center; }
     .fun-list .fun-list-item a {
       width: 3.3rem;
       height: 2.7rem;
-      background: -webkit-gradient(linear, left bottom, left top, from(#6a6a6a), to(#969696));
       background: linear-gradient(to top, #6a6a6a, #969696);
       border-radius: .2rem;
-      -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
-              box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4); }
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4); }
       .fun-list .fun-list-item a.active {
-        background: -webkit-gradient(linear, left bottom, left top, from(#4C67EA), to(#819FF5));
         background: linear-gradient(to top, #4C67EA, #819FF5); }
       .fun-list .fun-list-item a .iconfont {
         display: block;

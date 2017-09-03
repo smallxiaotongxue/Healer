@@ -6,7 +6,7 @@
 
 		<section class="wrapper">
 			<h1 class="customer-name">您好，肖先生</h1>
-			<h1 class="title-gray">HOW CAN WE TAKE <br> CARE YOURSELF?</h1>
+			<h1 class="title-gray">HOW CAN WE <br>TAKE CARE OF YOU ?</h1>
 			<ul class="fun-list">
 				<li class="fun-list-item">
 					<a class="active">

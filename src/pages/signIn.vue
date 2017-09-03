@@ -41,7 +41,11 @@
 		</div>
 
         <div class="sign-text-bottom">
-            <p>没有账号 ?<a>注册</a></p>
+            <p>没有账号 ?
+                <router-link class="page-link" to="signup">注册</router-link>
+                <router-link class="page-link" to="forgetPassword">忘记密码</router-link>
+            </p>
+            </p>
         </div>
 
 	</section>

@@ -2,7 +2,40 @@
 
 /* 公共样式 */
 
-.c-696969{color: #696969!important;}
-.mt-60{
-    margin-top: 60px;
+header + section {
+    padding-top: .88rem;
 }
+
+.wrapper{
+    margin: 0 .3rem;
+    position: relative;
+}
+.title-gray {
+    color: #969696;
+    word-spacing: .2rem;
+}
+
+.c-696969{color: #696969!important;}
+
+.mt-60{margin-top: .6rem!important;}
+.mt-70{margin-top: .7rem!important;}
+.mt-100{margin-top: 1rem!important;}
+
+.mb-50{margin-bottom: .5rem!important;}
+.mb-100{margin-bottom: 1rem!important;}
+
+/* 文本类样式 */
+
+.text-title {
+    font-size: .38rem;
+    text-align: center;
+    color: #1e1e1e;
+}
+.text{
+    font-size: .3rem;
+    text-align: center;
+    color:#666;
+}
+
+
+

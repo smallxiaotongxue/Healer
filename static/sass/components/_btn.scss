@@ -6,9 +6,9 @@
     border-radius: .9rem;
     text-align: center;
     font-size: .3rem;
-    margin: .5rem;
+    margin: .5rem .3rem;
     color: #fff;
+    font-weight: bold;
     background: linear-gradient(to right,$theme-color-dark,$theme-color-light);
-        box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
-
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 }

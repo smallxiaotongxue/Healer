@@ -183,11 +183,45 @@ textarea {
   -webkit-appearance: none; }
 
 /* 公共样式 */
+header + section {
+  padding-top: .88rem; }
+
+.wrapper {
+  margin: 0 .3rem;
+  position: relative; }
+
+.title-gray {
+  color: #969696;
+  word-spacing: .2rem; }
+
 .c-696969 {
   color: #696969 !important; }
 
 .mt-60 {
-  margin-top: 60px; }
+  margin-top: 0.6rem !important; }
+
+.mt-70 {
+  margin-top: 0.7rem !important; }
+
+.mt-100 {
+  margin-top: 1rem !important; }
+
+.mb-50 {
+  margin-bottom: 0.5rem !important; }
+
+.mb-100 {
+  margin-bottom: 1rem !important; }
+
+/* 文本类样式 */
+.text-title {
+  font-size: .38rem;
+  text-align: center;
+  color: #1e1e1e; }
+
+.text {
+  font-size: .3rem;
+  text-align: center;
+  color: #666; }
 
 @font-face {
   font-family: "iconfont";
@@ -287,8 +321,8 @@ textarea {
   position: absolute;
   top: 0;
   width: 100%;
-  height: .8rem;
-  line-height: .8rem;
+  height: .88rem;
+  line-height: .88rem;
   text-align: center;
   background: linear-gradient(to right, #4C67EA, #819FF5);
   box-shadow: 0 0 30px #000; }
@@ -296,6 +330,11 @@ textarea {
     content: '';
     display: table;
     clear: both; }
+  .nav-header.header-white {
+    background: #ffffff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); }
+    .nav-header.header-white .iconfont {
+      color: #969696; }
   .nav-header .nav-header-title {
     display: inline-block;
     font-size: .32rem;
@@ -309,6 +348,9 @@ textarea {
     padding-right: .3rem;
     color: #fff;
     position: relative; }
+    .nav-header .nav-header-right .icon-20 {
+      position: relative;
+      top: .05rem; }
     .nav-header .nav-header-right .msg-point {
       display: block;
       position: absolute;
@@ -383,8 +425,9 @@ textarea {
   border-radius: .9rem;
   text-align: center;
   font-size: .3rem;
-  margin: .5rem;
+  margin: .5rem .3rem;
   color: #fff;
+  font-weight: bold;
   background: linear-gradient(to right, #4C67EA, #819FF5);
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3); }
 
@@ -471,17 +514,6 @@ textarea {
     .form-list .list-item-radio .item-body {
       color: #b2b2b2; }
 
-header + section {
-  padding-top: .8rem; }
-
-.wrapper {
-  margin: 0 .3rem;
-  position: relative; }
-
-.title-gray {
-  color: #969696;
-  word-spacing: .2rem; }
-
 .customer-name {
   margin-top: .8rem; }
 
@@ -495,7 +527,7 @@ header + section {
     .fun-list .fun-list-item a {
       width: 3.3rem;
       height: 2.7rem;
-      background: linear-gradient(to top, #6a6a6a, #969696);
+      background: linear-gradient(to top, #666666, #969696);
       border-radius: .2rem;
       box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4); }
       .fun-list .fun-list-item a.active {
@@ -527,10 +559,15 @@ header + section {
   padding: .3rem;
   left: 0;
   bottom: 0;
-  font-size: .3rem;
+  font-size: .26rem;
   text-align: center; }
   .sign-text-bottom p {
-    color: #666; }
-  .sign-text-bottom a {
+    color: #666666; }
+  .sign-text-bottom .page-link {
     color: #4f69eb;
     margin-left: .2rem; }
+
+.person-message-title {
+  font-size: .36rem;
+  color: #696969;
+  margin: 0.8rem .5rem; }

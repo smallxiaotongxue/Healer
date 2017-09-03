@@ -6,25 +6,14 @@
 @import "../base/common";
 @import "../base/icon";
 
-@import "../ext/mixin";
+@import "../components/mixin";
 
 @import "../components/header";
 @import "../components/footer";
 @import "../components/btn";
 @import "../components/form-list";
 
-header + section {
-    padding-top: .8rem;
-}
 
-.wrapper{
-    margin: 0 .3rem;
-    position: relative;
-}
-.title-gray {
-    color: #969696;
-    word-spacing: .2rem;
-}
 
 //index主页样式
 .customer-name{
@@ -89,14 +78,21 @@ header + section {
     padding: .3rem;
     left: 0;
     bottom: 0;
-    font-size: .3rem;
+    font-size: .26rem;
     text-align: center;
 
     p{
         color: $hint-font-color;
     }
-    a{
+    .page-link{
         color: $theme-font-color;
         margin-left: .2rem;
     }
+}
+
+//inputName页样式
+.person-message-title{
+    font-size: .36rem;
+    color: #696969;
+    margin: 0.8rem .5rem;
 }

@@ -51,6 +51,9 @@ Object.keys(proxyTable).forEach(function (context) {
   app.use(proxyMiddleware(options.filter || context, options))
 })
 
+//模拟数据
+app.use('/mockdata',express.static('./mockdata'))
+
 // handle fallback for HTML5 history API
 app.use(require('connect-history-api-fallback')())
 

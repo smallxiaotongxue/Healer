@@ -212,6 +212,15 @@ header + section {
 .mb-100 {
   margin-bottom: 1rem !important; }
 
+.text-left {
+  text-align: left !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-right {
+  text-align: right !important; }
+
 /* 文本类样式 */
 .text-title {
   font-size: .38rem;
@@ -514,6 +523,27 @@ header + section {
     .form-list .list-item-radio .item-body {
       color: #b2b2b2; }
 
+.pick-list-wrapper {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox; }
+  .pick-list-wrapper .pick-list {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+    .pick-list-wrapper .pick-list .list-item {
+      height: 1.1rem;
+      line-height: 1.1rem;
+      color: #969696;
+      text-align: center; }
+      .pick-list-wrapper .pick-list .list-item span {
+        font-size: .36rem; }
+      .pick-list-wrapper .pick-list .list-item.pick-selected {
+        background: #82a0f6;
+        color: #ffffff; }
+
 .customer-name {
   margin-top: .8rem; }
 
@@ -571,3 +601,5 @@ header + section {
   font-size: .36rem;
   color: #696969;
   margin: 0.8rem .5rem; }
+
+/*# sourceMappingURL=style.css.map */

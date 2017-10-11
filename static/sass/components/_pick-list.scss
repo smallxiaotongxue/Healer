@@ -1,0 +1,27 @@
+@charset "UTF-8";
+.pick-list-wrapper {
+    @include display-flex;
+
+    .pick-list{
+        @include flex1;
+
+
+        .list-item{
+            height: 1.1rem;
+            line-height: 1.1rem;
+            color: $light-font-color;
+            text-align: center;
+
+             span{
+                font-size: .36rem;
+            }
+
+            &.pick-selected{
+                background:#82a0f6;
+                color: #ffffff;
+            }
+        }
+
+       
+    }
+}
